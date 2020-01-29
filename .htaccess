@@ -1,4 +1,8 @@
-SetEnv host localhost
+# SetEnv host localhost
+SetEnv host oa4.info
+# SetEnv user moon_user
 SetEnv user moon_user
-SetEnv password MoonPassWord
+# SetEnv password MoonPassword
+SetEnv password MoonPassword
+# SetEnv database moon_data
 SetEnv database moon_data
