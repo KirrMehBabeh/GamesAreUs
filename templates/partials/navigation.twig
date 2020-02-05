@@ -1,3 +1,4 @@
+<div id="spacing">
 <section class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top">
   <a href="index.php" class="navbar-brand">Shop</a>
   <button class="navbar-toggler" data-target="#main-nav" data-toggle="collapse">
@@ -10,7 +11,8 @@
   <nav class="d-flex">
     <a href="wishlist.php" class="btn text-light">
       <i class="fas fa-heart"></i>
-      <span class="badge badge-primary">0</span>
+      {% set wishlist_total = (wish_total) ? wish_total : 0 %}
+      <span class="badge badge-secondary">{{wishlist_total}}</span>
     </a>
     <a href="shopping-cart.php" class="btn text-light">
       <i class="fas fa-shopping-cart"></i>
@@ -25,3 +27,4 @@
     </nav>
   </div>
 </section>
+</div>
